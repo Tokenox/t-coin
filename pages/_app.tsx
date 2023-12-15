@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import { ThirdwebProvider, paperWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const ContractAddress = "0xf94BC556ab0f133dFdbc2d0A6FFa793f3918f218";
 export const ContractId = "46ea0f62-7f0b-4d95-b263-877a229e7767";
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         }),
       ]}
     >
-      <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </ThirdwebProvider>
   );
 }
