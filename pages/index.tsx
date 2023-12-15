@@ -7,7 +7,7 @@ import { ContractAddress } from "./_app";
 const Home: NextPage = () => {
   const { contract } = useContract(ContractAddress, "edition-drop");
   const { data: nfts, isLoading: loadingNfts } = useNFTs(contract);
-
+  console.log("nfts", nfts);
   return (
     <div className={styles.container}>
       <div className={styles.heroBanner}>

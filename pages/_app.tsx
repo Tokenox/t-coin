@@ -3,12 +3,12 @@ import { ThirdwebProvider, paperWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 
-export const ContractAddress = "0xf94BC556ab0f133dFdbc2d0A6FFa793f3918f218";
-export const ContractId = "46ea0f62-7f0b-4d95-b263-877a229e7767";
+export const ContractAddress = "0x0c4a1d5b2d49EB6990cD4ddcCCdB96f8b371ed80";
+export const ContractId = "0a30bd0c-6adb-4ab6-9a6d-041b5615db35";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "mumbai";
+const activeChain = "polygon";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
