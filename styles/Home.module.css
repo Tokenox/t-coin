@@ -62,7 +62,6 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 3rem auto 6rem auto;
-
 }
 
 .card {
@@ -135,7 +134,7 @@
 }
 
 .heroBanner {
-  background-image: url('https://media.discordapp.net/attachments/1074964327053930518/1116186580663668837/watase.eth_person_on_the_edge_of_a_cliff_looking_out_into_a_vas_afd019f2-393e-4199-82cf-15805db1bc23.png?width=796&height=474');
+  background-image: url("https://images.unsplash.com/photo-1698877774461-90e5466a467f?q=80&w=2913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
