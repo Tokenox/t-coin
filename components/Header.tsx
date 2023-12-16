@@ -2,16 +2,20 @@ import React from "react";
 import CustomButton from "./CustomButton";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 const Header = () => {
+  const address = useAddress();
   return (
     <div className="bg-[url('/header/background.svg')] bg-cover ">
       <Navbar />
       <div className="pb-10">
-        <div className="w-[75%] text-white mx-auto flex  flex-col gap-10 pt-14 lg:w-[55%]">
+        <div className="text-white mx-auto flex  flex-col gap-10 pt-14 md:w-[55%]">
           <div className="flex flex-col gap-5 pb-3">
             <div className="px-5 lg:px-10">
-              <h1 className="text-base font-bold text-center font-space md:text-lg lg:text-5xl ">
+              <h1 className="text-2xl font-bold text-center font-space md:text-lg lg:text-5xl ">
                 EXPLORE tHE ELITE WORLD OF T NFT
               </h1>
             </div>
@@ -22,10 +26,20 @@ const Header = () => {
             </p>
           </div>
           <div className="flex  justify-center items-center gap-3 md:gap-8  ">
-            <CustomButton
-              btnText="Connect"
-              className="bg-blue-Violet text-lg px-6 py-1 md:px-11 md:py-3"
-            />
+            {!address ? (
+              <ConnectWallet
+                btnTitle="Login"
+                className="bg-blue-Violet text-lg px-6 py-1 md:px-11 md:py-3"
+              />
+            ) : (
+              <Link href={`/profile/${address}`}>
+                <img
+                  src="https://avatars.githubusercontent.com/u/81866624?v=4"
+                  alt="avatar"
+                  className={styles.avatar}
+                />
+              </Link>
+            )}
             <CustomButton
               btnText="LearnMore"
               className="border border-blue-Violet text-lg px-6 py-1 md:px-11 md:py-3"
@@ -38,7 +52,7 @@ const Header = () => {
             alt=""
             height={100}
             width={100}
-            className="h-[591px] w-[938px]"
+            className="lg:h-[591px] lg:w-[938px] sm:h-[400px] h-[300px] w-[500px]"
           />
         </div>
       </div>
