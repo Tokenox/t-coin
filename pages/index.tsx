@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { ContractAddress } from "./_app";
 import Header from "../components/Header";
+import Reviews from "../components/Reviews";
 
 const Home: NextPage = () => {
   const { contract } = useContract(ContractAddress, "edition-drop");
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
+      <Reviews />
       <div className={styles.container}>
         <div className={styles.heroBanner}>
           <div>

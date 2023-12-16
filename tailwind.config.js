@@ -15,7 +15,7 @@ module.exports = {
         railway: ["Raleway", "sans-serif"],
       },
       colors: {
-        "taelish-blue": "#0F172A",
+        "taelish-blue": " #030326",
         "blue-Violet": "#710CF6",
         purple: " #A23DFF",
         silver: "#C8C8DC",
