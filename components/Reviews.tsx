@@ -4,18 +4,18 @@ import React from "react";
 
 const Reviews = () => {
   return (
-    <div className="border bg-taelish-blue">
-      <div className=" w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+    <div className=" bg-taelish-blue">
+      <div className=" w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
         {/* card */}
         {reviewsData.map((review) => {
           return (
             <>
-              <div className="flex flex-col justify-center items-center text-center py-10 px-2 gap-4 ">
+              <div className="flex flex-col justify-center items-center text-center py-7 px-2 gap-4 ">
                 <Image
                   src={review.imagePath}
                   alt={review.altText}
-                  height={40}
-                  width={40}
+                  height={50}
+                  width={50}
                   className="rounded-full "
                 />
                 <div className="flex">
@@ -28,9 +28,11 @@ const Reviews = () => {
                   })}
                 </div>
                 <div>
-                  <p className="text-slate-500 italic">{review.reviewText}</p>
+                  <p className="text-slate-500 italic text-lg ">
+                    {review.reviewText}
+                  </p>
                 </div>
-                <p className="text-indigo-500">{review.rating}</p>
+                <p className="text-indigo-500 text-base ">{review.rating}</p>
               </div>
             </>
           );
