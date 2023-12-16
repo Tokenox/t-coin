@@ -1,9 +1,11 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <div className="bg-taelish-blue h-screen">
+      <Navbar />
       <div className="w-[50%] border text-white mx-auto flex  flex-col gap-10 py-10">
         <div className="flex flex-col gap-5 pb-5">
           <div className="px-10">

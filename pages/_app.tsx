@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import { ThirdwebProvider, paperWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 
 export const ContractAddress = "0xf94BC556ab0f133dFdbc2d0A6FFa793f3918f218";
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }),
       ]}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Component {...pageProps} />
     </ThirdwebProvider>

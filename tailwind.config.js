@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         "taelish-blue": "#0F172A",
         "blue-Violet": "#710CF6",
+        "purple":"#8A2BE2"
       },
     },
   },
