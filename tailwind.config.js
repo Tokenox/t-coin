@@ -12,11 +12,13 @@ module.exports = {
     extend: {
       fontFamily: {
         space: ["Space Grotesk", "sans-serif"],
+        railway: ["Raleway", "sans-serif"],
       },
       colors: {
         "taelish-blue": "#0F172A",
         "blue-Violet": "#710CF6",
-        "purple":"#8A2BE2"
+        purple: " #A23DFF",
+        silver: "#C8C8DC",
       },
     },
   },
